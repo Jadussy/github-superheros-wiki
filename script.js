@@ -1,5 +1,3 @@
-// Je sais pas si il faut modifier ou pas le script.js donc je laisse le script.js original...
-
 // ========================================
 // 🎯 INSTRUCTIONS
 // ========================================
