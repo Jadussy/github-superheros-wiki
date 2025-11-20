@@ -1,23 +1,14 @@
-// ========================================
-// 🎯 INSTRUCTIONS
-// ========================================
-// 1. Changez l'ID du héros ci-dessous
-// 2. Personnalisez l'affichage HTML
-// 3. Ajoutez du CSS dans index.html si vous voulez
-// 4. Faites des commits réguliers !
-// ========================================
-
-const heroId = 346; // 👈 CHANGEZ CET ID ! (346 = Iron Man)
-
-// Liste des IDs disponibles :
-// Spider-Man: 620, Batman: 70, Iron Man: 346, Superman: 644
-// Wonder Woman: 720, Hulk: 332, Thor: 659, Flash: 263
-const myToken = "4905856019427443"; // ⚠️ Remplacez par le token donné dans le cours
+const heroId = 346;
+const myToken = "6570e44801f81594f8a913d3e21be5ab";
 const apiUrl = `https://www.superheroapi.com/api.php/${myToken}/${heroId}`;
 
 async function recupDataHero() {
     try {
+        // console.log("apiUrl", apiUrl);
+        
         const response = await fetch(`https://corsproxy.io/?${encodeURIComponent(apiUrl)}`);
+
+        // console.log("response", response);
 
         if (!response.ok) {
             throw new Error(`Erreur HTTP: ${response.status}`);
@@ -36,7 +27,7 @@ async function recupDataHero() {
         console.error("Errur lors de la récupération des données:", error);
         document.getElementById('hero-info').innerHTML = `
             <p style="color: red; text-align: center;">
-                 Erreur: ${error.message}
+                 Erreur: "${error.message}"
             </p>
         `;
     }
