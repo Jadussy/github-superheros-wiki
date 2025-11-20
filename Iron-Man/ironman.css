@@ -22,6 +22,11 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 h2 {
     text-align: center;
     color: rgb(216, 137, 0);
@@ -43,28 +48,41 @@ body {
 }
 
 .hero-card {
+    display: inline-flex;
     background: linear-gradient(135deg, rgb(70, 0, 0), rgb(134, 30, 30));
     border-radius: 15px;
     padding: 25px;
     margin: 30px auto;
-    max-width: 500px;
+    max-width: 1000px;
     border: 2px dotted rgb(234, 0, 0);
     box-shadow: 0 0 20px rgba(234, 0, 0, 0.3);
     text-align: center;
 }
 
-.hero-card h2 {
+.hero-profile h2 {
+    display: block;
     color: rgb(216, 137, 0);
     font-size: 2.2rem;
     margin-bottom: 15px;
+    margin-right: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-card img {
+.hero-profile img {
+    display: block;
+    align-items: center;
     border-radius: 10px;
-    margin: 15px 0;
+    margin: 15px 15px;
     border: 2px solid rgb(216, 137, 0);
     box-shadow: 0 0 15px rgba(216, 137, 0, 0.4);
+}
+
+.hero-profile {
+    display: block;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 15px;
 }
 
 .hero-details {

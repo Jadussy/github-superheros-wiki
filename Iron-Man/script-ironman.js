@@ -10,20 +10,22 @@ fetch(apiUrl)
 
         container.innerHTML = `
         <div class="hero-card">
-             <h2>${data.name}</h2>
-             <img src="${heroImageUrl}" alt="${data.name}" height="200">
-             <div class="hero-details">
-                 <p><strong>Nom complet :</strong> ${data.biography['full-name'] || 'Non disponible'}</p>
-                 <p><strong>Éditeur :</strong> ${data.biography.publisher}</p>
-                 <p><strong>Lieu de naissance :</strong> ${data.biography['place-of-birth'] || 'Non disponible'}</p>
-                 <p><strong>Intelligence :</strong> ${data.powerstats.intelligence}/100</p>
-                 <p><strong>Force :</strong> ${data.powerstats.strength}/100</p>
-                 <p><strong>Vitesse :</strong> ${data.powerstats.speed}/100</p>
-                 <p><strong>Endurance :</strong> ${data.powerstats.durability}/100</p>
-                 <p><strong>Puissance :</strong> ${data.powerstats.power}/100</p>
-                 <p><strong>Combat :</strong> ${data.powerstats.combat}/100</p>
-             </div>
-         </div>
+            <div class="hero-profile">
+                <h2>${data.name}</h2>
+                <img src="${heroImageUrl}" alt="${data.name}" height="200">
+            </div>
+            <div class="hero-details">
+                <p><strong>Nom complet :</strong> ${data.biography['full-name'] || 'Non disponible'}</p>
+                <p><strong>Éditeur :</strong> ${data.biography.publisher}</p>
+                <p><strong>Lieu de naissance :</strong> ${data.biography['place-of-birth'] || 'Non disponible'}</p>
+                <p><strong>Intelligence :</strong> ${data.powerstats.intelligence}/100</p>
+                <p><strong>Force :</strong> ${data.powerstats.strength}/100</p>
+                <p><strong>Vitesse :</strong> ${data.powerstats.speed}/100</p>
+                <p><strong>Endurance :</strong> ${data.powerstats.durability}/100</p>
+                <p><strong>Puissance :</strong> ${data.powerstats.power}/100</p>
+                <p><strong>Combat :</strong> ${data.powerstats.combat}/100</p>
+            </div>
+        </div>
         
         `;
     })

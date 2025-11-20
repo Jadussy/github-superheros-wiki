@@ -13,6 +13,11 @@ h1 {
   color: #ffffff;
 }
 
+h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 40px;
   text-align: center;
